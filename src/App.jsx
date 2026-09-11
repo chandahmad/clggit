@@ -1,11 +1,17 @@
 
 
-import ICard from './component/ICard'
+// import ICard from './component/ICard'
+import ICardGallery from './component/ICardGallery'
+
 
 function App() {
   return (
     <>
-      <ICard />
+    <ICardGallery />
+
+    
+    
+      
     </>
   )
 }

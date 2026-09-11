@@ -26,13 +26,19 @@
 // export default ICard
 import React from 'react'
 import image from '../assets/photo.jpg'
-function ICard() {
+function ICard(props) {
   let a=9006;
   let name="Chand Ahmad";
   return (
-    <div style={{border:'10px solid red',width:'200px',height:'400px',margin:'auto',textAlign:'center'}}>
+    
+    <div style={{border:'10px solid red',width:'200px',height:'400px',margin:'auto',textAlign:'center',gap:'5px'}}>
       <h2 style={{backgroundColor:'blue',color:'white'}}>ABES ENGINEERING COLLEGE</h2>
-      <img 
+     <img src={props.image} height="100" width="100" borderRadius="50%" alt="Student" />
+      <h3>Roll No. = {props.roll}</h3>
+      <h3>Name = {props.name}</h3>
+      <h3>Branch = {props.branch}</h3>
+
+      {/* <img 
         src={image}
         alt="Student Photo"
         style={{
@@ -40,12 +46,13 @@ function ICard() {
           height: '80px',
           borderRadius: '50%',
           objectFit: 'cover'
-        }}/>
+        }}/> */}
       {/* <h5 style={{color:'green'}}>Welcome to react using vite</h5> */}
-      <h5 style={{color:'white'}}>Name={name}</h5>
+      {/* <h5 style={{color:'white'}}>Name={name}</h5>
       <h5 style={{color:'white'}}>Roll No.={a}</h5>
       <h5 style={{color:'white'}}>Branch=AIML</h5>
-      <h5 style={{color:'white'}}>Section=C</h5>
+      <h5 style={{color:'white'}}>Section=C</h5> */}
+      {/* <h5 style={{color:'white', margin:'10px 10px'}}>branch= AIML</h5> */}
       {/* <h2 style={{color:'yellow'}}>Name={name}</h2>
       <h2 style={{color:'red'}}>Roll No.={a}</h2>
       <h2 style={{color:'orange'}}>Course=B.Tech CSE</h2> */}
