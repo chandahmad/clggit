@@ -15,7 +15,7 @@ function StateHandling() {
     }
 
   return (
-    <div style={{border:'2px solid red',height:'300px',width:'300px',backgroundColor:`rgb($(red),$(green),$(blue))`,textAlign:'center',margin:'auto',fontSize:'50px'}}>
+    <div style={{border:'2px solid red',height:'300px',width:'300px',backgroundColor:`rgb(${red},${green},${blue})`,textAlign:'center',margin:'auto',fontSize:'50px'}}>
       <h2 style={{backgroundColor:'brown',color:'darkBlue'}}>counter App</h2>
       <h2 style={{backgroundColor:'black',color:'white'}}>counter={counter}</h2>
       <button style={{backgroundColor:'red',color:'white',borderRadius:'30px',margin:'10px',background:'linear-gradient(to right, #d4ed1b, #ff4b2b)'}} onClick={increament}>IncrementCounter</button>
