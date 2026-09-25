@@ -26,17 +26,16 @@
 // export default ICard
 import React from 'react'
 import image from '../assets/photo.jpg'
-function ICard(props) {
-  let a=9006;
-  let name="Chand Ahmad";
+function ICard({data}) {
+  
   return (
     
     <div style={{border:'10px solid red',width:'200px',height:'400px',margin:'auto',textAlign:'center',gap:'5px'}}>
       <h2 style={{backgroundColor:'blue',color:'white'}}>ABES ENGINEERING COLLEGE</h2>
-     <img src={props.image} height="100" width="100" borderRadius="50%" alt="Student" />
-      <h3>Roll No. = {props.roll}</h3>
-      <h3>Name = {props.name}</h3>
-      <h3>Branch = {props.branch}</h3>
+     <img src={data.image} height="100" width="100" borderRadius="50%" alt="Student" />
+      <h3>Roll No. = {data.roll}</h3>
+      <h3>Name = {data.name}</h3>
+      <h3>Branch = {data.branch}</h3>
 
       {/* <img 
         src={image}
@@ -61,63 +60,3 @@ function ICard(props) {
 }
 export default ICard
 
-// import React from 'react'
-// import image from '../assets/photo.jpg'
-
-// function ICard() {
-
-//   let a = 9006
-//   let name = "Chand Ahmad"
-
-//   return (
-//     <div
-//       style={{
-//         border: '10px solid red',
-//         width: '200px',
-//         height: '400px',
-//         margin: 'auto',
-//         textAlign: 'center'
-//       }}
-//     >
-
-//       <h2
-//         style={{
-//           backgroundColor: 'blue',
-//           color: 'white'
-//         }}
-//       >
-//         ABES ENGINEERING COLLEGE
-//       </h2>
-
-//       <img
-//         src={image}
-//         alt="Student Photo"
-//         style={{
-//           width: '80px',
-//           height: '80px',
-//           borderRadius: '50%',
-//           objectFit: 'cover'
-//         }}
-//       />
-
-//       <h5 style={{ color: 'white' }}>
-//         Name={name}
-//       </h5>
-
-//       <h5 style={{ color: 'white' }}>
-//         Roll No.={a}
-//       </h5>
-
-//       <h5 style={{ color: 'white' }}>
-//         Branch=AIML
-//       </h5>
-
-//       <h5 style={{ color: 'white' }}>
-//         Section=C
-//       </h5>
-
-//     </div>
-//   )
-// }
-
-// export default ICard
