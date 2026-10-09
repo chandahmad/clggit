@@ -1,38 +1,4 @@
 
-// import React, { useState } from "react";
-// import photos from "../assets/photos.jpg";
-
-// function Imagemanipulation() {
-//     const [height, setHeight] = useState(200);
-
-//     function setheight() {
-//     setHeight(height + 10);
-// }
-//     }
-    
-
-//   return (
-//     <div>
-//         <h2 style={{color:'red', backgroundColor:'black'}}>Imagemanipulation</h2>
-//         <div style={{border:'2px solid red', height:'400px', width:'400px', marginLeft:'300px'}}>
-//         <img src={photos} height={height} width={200}></img>
-//         </div>
-
-
-//         <div>
-//             <button onClick={setheight}>Enhance Height </button>
-
-
-//         </div>
-        
-        
-//         </div>
-//   )
-
-
-// export default Imagemanipulation
-
-
 import React from 'react'
 import { useState } from 'react';
 import photos from '../assets/photos.jpg';
